@@ -1,9 +1,7 @@
 from art import *
 
-from functions import Addition
-from functions import Division
-from functions import PlayMusic
-from functions import Subtraction
+from functions.math import Subtraction, Division, Summation
+from functions.util import PlayMusic
 
 
 def startup_prompt():
@@ -11,14 +9,14 @@ def startup_prompt():
     print('--------------------------')
     print('Specify type of operation.')
     print('--------------------------')
-    print('1. Addition of x amount of values'
-          '\n2. Subtract y from x'
-          '\n3. Divide x by y')
+    print('1. Summation of x amount of values'
+          '\n2. Subtraction of y from x'
+          '\n3. Division of x by y')
 
     calc_input = input("\nSpecify calculation: ")
 
     if calc_input == '1':
-        Addition.calculate_addition()
+        Summation.calculate_summation()
     elif calc_input == '2':
         Subtraction.calculate_subtraction()
     elif calc_input == '3':

@@ -1,7 +1,4 @@
-from art import tprint
-
-
-def calculate_addition():
+def calculate_summation():
     additional_value_number = int(input("Specify amount of values: "))
     additional_value_list = []
     additional_value_list_summed = 0
@@ -15,4 +12,4 @@ def calculate_addition():
     for i in additional_value_list:
         additional_value_list_summed = additional_value_list_summed + int(i)
 
-    print (f"The sum of these values is : {additional_value_list_summed}")
+    print(f"The sum of these values is : {additional_value_list_summed}")
