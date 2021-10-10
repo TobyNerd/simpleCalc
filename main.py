@@ -1,9 +1,13 @@
+from art import *
+
 from functions import Addition
-from functions import Subtraction
 from functions import Division
+from functions import PlayMusic
+from functions import Subtraction
 
 
 def startup_prompt():
+    PlayMusic.play_music()
     print('--------------------------')
     print('Specify type of operation.')
     print('--------------------------')
@@ -26,4 +30,5 @@ def startup_prompt():
 
 
 if __name__ == '__main__':
+    tprint("simplecalc", "Doh")
     startup_prompt()

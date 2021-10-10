@@ -1,3 +1,6 @@
+from art import tprint
+
+
 def calculate_addition():
     additional_value_number = int(input("Specify amount of values: "))
     additional_value_list = []
